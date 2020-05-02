@@ -21,22 +21,22 @@ height: 100%;
 }
 
 
-    .icon-zap img{
-    width: 50px;
-    }
-    .icon-zap{
-    position: fixed;
-    bottom: 5%;
-    z-index: 4;
-    right: 10px;
-    /* animation */
-    /* animation-name: zap ; 
-    animation-duration: 2s; 
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: reverse; */
-   
-    }
+.icon-zap img{
+width: 50px;
+}
+.icon-zap{
+position: fixed;
+bottom: 5%;
+z-index: 4;
+right: 10px;
+/* animation */
+/* animation-name: zap ; 
+animation-duration: 2s; 
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: reverse; */
+
+}
 
 
 /* Barra de  nageação */
@@ -114,16 +114,16 @@ z-index: 1;
 }
 
 .texto-capa p{
-    font-size: 18px;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 500px;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    color: #ffffff99;
-    
-    }
-    
+font-size: 18px;
+background-color: rgba(0,0,0,0.5);
+border-radius: 500px;
+width: 80%;
+margin: 0 auto;
+margin-bottom: 50px;
+color: #ffffff99;
+
+}
+
 
 
 /* == botões == */
@@ -172,20 +172,20 @@ padding: 0px 4px;
 .cards {
 
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
-align-items: center;
-padding: 50px;
+
 
 }
 
 .card{
-margin-top: 20px;
-padding: 20px;
-margin-left:5px ;
-margin-right: 5px;
+width:500px ;
+padding: 30px 20px ;
 background: #DDD;
-height: 420PX;
 border-radius: 5px;
+margin-left: 5px;
+margin-right: 5px;
+margin-top:  20px;
 
 
 }
@@ -193,6 +193,7 @@ border-radius: 5px;
 .card-title{
 font-size: 20px;
 margin: 20px 20px;
+position: relative;
 }
 .card-text{
 font-size: 15px;
@@ -200,6 +201,7 @@ max-width: 300px;
 margin: 20px auto;
 color: rgb(134, 131, 131);
 letter-spacing: 0.5px;
+position: relative;
 }
 
 
@@ -238,18 +240,19 @@ padding: 50px 0px 20px 0px;
 }
 
 footer span{
-    margin-bottom: 30px;
+margin-bottom: 30px;
 
 }
 
 footer h4{
-    text-transform: uppercase;
-    color: #7c25f8;
+text-transform: uppercase;
+color: #7c25f8;
+padding-bottom: 8px;
 }
 footer ul{
-    background: none;
+background: none;
 }
 
 .item-rede-social{
-    display: flex;
+display: flex;
 }
