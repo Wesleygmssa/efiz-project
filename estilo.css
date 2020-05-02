@@ -1,0 +1,229 @@
+/* 
+@author Wesley Guerra
+@version 0.1
+*/
+
+/* ====layout ====== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+font-family: 'Roboto', sans-serif;
+-webkit-font-smooyhing: antialiased; /* melhoarda na visualização da fonte */
+outline: none;
+}
+p{
+color: rgb(134, 131, 131);
+font-size: 16px;
+text-shadow: 0px 0px 0.5px #000;
+}
+body, html,.capa{
+height: 100%;
+
+}
+
+
+    .icon-zap img{
+    width: 50px;
+    }
+    .icon-zap{
+    position: fixed;
+    bottom: 5%;
+    z-index: 4;
+    right: 10px;
+    /* animation */
+    /* animation-name: zap ; 
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: reverse; */
+   
+    }
+
+
+/* Barra de  nageação */
+
+.img-logo{
+height: 40px;
+width: 132px;
+display: block;
+background: url('imagens/spotify.svg') no-repeat;
+background-size: contain;
+color: transparent;
+
+}
+nav.navbar-transparent{
+padding: 15px 0px;
+background: rgba(0,0,0,0.6);
+border: none;
+
+}
+.navbar-brand{
+padding: 5px 15px;
+
+
+} 
+
+.divisor{
+width: 1px;
+height: 16px;
+background: #ffffff;
+margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+color: #fff;
+text-shadow: 2px 2px 2px #000;
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+color: #7c25f8;
+}
+
+/* Imagem de capa */
+.banner{
+width: 100%;
+height: 100vh;
+background: url('https://images.unsplash.com/photo-1501290836517-b22a21c522a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80') no-repeat;
+background-size: cover;
+background-attachment: fixed;       
+position: relative;
+
+}
+.layer{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.4);
+
+}
+
+.capa{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.texto-capa{
+text-align: center;
+color: #fff;
+z-index: 1;
+}
+
+.texto-capa p{
+    font-size: 18px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 500px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: #ffffff99;
+    
+    }
+    
+
+
+/* == botões == */
+.btn-custom {
+color: #fff;
+border-radius: 500px;
+background: #7c25f8;
+padding: 10px 35px;
+
+}
+
+.btn-custom:hover{
+background: #6207e3;
+color: #fff;
+transition: 1s;
+
+}
+/* segmetons */
+#segmentos{
+background: #fff;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+
+
+/* tipografia */
+#segmentos .title{
+text-align: center;
+}
+.title h2{
+font-size: 40px;
+letter-spacing: 0.5px;
+margin-bottom: 20px;
+}
+.texto-capa h1{
+font-size: 80px;
+font-weight: 900px;
+letter-spacing: -6px;
+margin-bottom: 50px; 
+padding: 0px 4px;
+}
+
+
+.cards {
+
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px;
+
+}
+
+.card{
+margin-top: 20px;
+padding: 20px;
+margin-left:5px ;
+margin-right: 5px;
+background: #DDD;
+height: 420PX;
+border-radius: 5px;
+
+
+}
+
+.card-title{
+font-size: 20px;
+margin: 20px 20px;
+}
+.card-text{
+font-size: 15px;
+max-width: 300px;
+margin: 20px auto;
+color: rgb(134, 131, 131);
+letter-spacing: 0.5px;
+}
+
+
+
+/* section 2 Abertura de mepresas */
+section#abertura{
+background: #EEe;
+}
+
+.img{ 
+width: 100%;
+max-width: 490px;
+}
+#abertura h3{
+padding-top: 20px;
+font-size: 30px;
+letter-spacing: 2px;
+
+}
+
+#abertura p{
+padding-top: 20px;
+line-height: 32px;
+letter-spacing: 2px;
+margin-bottom: 50px;
+}
+
