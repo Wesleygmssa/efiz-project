@@ -9,6 +9,7 @@
 font-family: 'Roboto', sans-serif;
 -webkit-font-smooyhing: antialiased; /* melhoarda na visualização da fonte */
 outline: none;
+box-sizing: border-box;
 }
 p{
 color: rgb(134, 131, 131);
@@ -117,10 +118,11 @@ z-index: 1;
 font-size: 18px;
 background-color: rgba(0,0,0,0.5);
 border-radius: 500px;
-width: 80%;
+width: 60%;
 margin: 0 auto;
 margin-bottom: 50px;
-color: #ffffff99;
+color: #ffffff;
+
 
 }
 
@@ -203,13 +205,56 @@ color: rgb(134, 131, 131);
 letter-spacing: 0.5px;
 position: relative;
 }
+/* == section solicitar uma proposta === */
+#protosta{
+background: #414041 ;
+}
+
+section .form{
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+padding: 40px;
+
+}
+form{
+padding: 20px;
+}
+
+.form h1{
+color: #fff;
+font-size: 40px;
+}
+input{
+padding: 15px;
+width: 80%;
+border-radius: 500px;
+}
+
+form button{
+width: 80%;
+background: rgba(0,0,0,0.6);
+color: #fff;
+border-radius: 500px;
+border: 0;
+padding: 15px 35px;
+font-size: 20px;
+transition: background 1s;
+
+}
+
+form button:hover{
+background:#A52A2A ;
+
+}
+
 
 
 
 /* section 2 Abertura de mepresas */
 section#abertura{
 background: #EEe;
-padding-bottom: 40px;
+padding: 40px;
 }
 
 .img{ 
