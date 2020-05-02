@@ -69,7 +69,7 @@ background: #ffffff;
 margin: 16px 10px;
 }
 
-.navbar-inverse .navbar-nav>li>a{
+.navbar-inverse .navbar-nav>li>a, footer a{
 color: #fff;
 text-shadow: 2px 2px 2px #000;
 
@@ -207,6 +207,7 @@ letter-spacing: 0.5px;
 /* section 2 Abertura de mepresas */
 section#abertura{
 background: #EEe;
+padding-bottom: 40px;
 }
 
 .img{ 
@@ -227,3 +228,28 @@ letter-spacing: 2px;
 margin-bottom: 50px;
 }
 
+
+footer{
+padding-top:20px ;
+background: #000;
+padding: 50px 0px 20px 0px;
+
+
+}
+
+footer span{
+    margin-bottom: 30px;
+
+}
+
+footer h4{
+    text-transform: uppercase;
+    color: #7c25f8;
+}
+footer ul{
+    background: none;
+}
+
+.item-rede-social{
+    display: flex;
+}
