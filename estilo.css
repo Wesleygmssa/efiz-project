@@ -136,19 +136,19 @@ border-radius: 500px;
 background: #7c25f8;
 padding: 10px 35px; */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    border: 1px solid #7c25f8;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #7c25f8;
-    border-radius: 5px;
-    max-width: 200px;
-    width: 100%px;
-    margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 15px;
+border: 1px solid #7c25f8;
+color: white;
+text-decoration: none;
+cursor: pointer;
+background-color: #7c25f8;
+border-radius: 5px;
+max-width: 200px;
+width: 100%px;
+margin: 0 auto;
 
 }
 
@@ -191,8 +191,6 @@ padding: 0px 4px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-
-
 }
 
 .card{
@@ -207,7 +205,6 @@ margin-top:  20px;
 -webkit-box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.75);
 box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.75);
-
 
 }
 
@@ -224,6 +221,11 @@ color: rgb(134, 131, 131);
 letter-spacing: 0.5px;
 position: relative;
 }
+
+
+
+
+
 /* == section solicitar uma proposta === */
 #protosta{
 background: #414041 ;
@@ -260,15 +262,12 @@ padding: 15px 35px;
 font-size: 20px;
 transition: background 1s;
 
-
 }
 
 form button:hover{
 background:#A52A2A ;
 
 }
-
-
 
 
 /* section 2 Abertura de mepresas */
@@ -295,15 +294,18 @@ letter-spacing: 2px;
 margin-bottom: 50px;
 }
 #abertura a{
-    margin: 0;
+margin: 0;
 }
 /* footer */
+
+footer p{
+    line-height: 30px;
+}
 
 footer{
 padding-top:20px ;
 background: #000;
 padding: 50px 0px 20px 0px;
-
 
 }
 
@@ -316,11 +318,38 @@ footer h4{
 text-transform: uppercase;
 color: #fff;
 padding-bottom: 8px;
+margin-top: 8px;
+
+
 }
 footer ul{
 background: none;
 }
 
-.item-rede-social{
-display: flex;
+footer ul li{
+    display: flex;
+  
 }
+.item-contato ul li{
+    padding: 10px;
+    color: #fff;
+}
+
+.item-contato ul li a {
+    padding-left: 10px;
+
+}
+.item-contato ul li a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.item-rede-social {
+display: flex;
+padding: 2px;
+}
+
+.item-rede-social a{
+    padding: 8px;
+}
+
