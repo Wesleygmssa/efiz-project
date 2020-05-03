@@ -312,7 +312,7 @@ margin: 0;
 /* footer */
 
 footer p{
-    line-height: 30px;
+line-height: 30px;
 }
 
 footer{
@@ -327,34 +327,35 @@ margin-bottom: 30px;
 
 }
 
-footer h4{
-text-transform: uppercase;
+footer  h4{
 color: #fff;
 padding-bottom: 8px;
 margin-top: 8px;
-
-
 }
 footer ul{
 background: none;
 }
 
 footer ul li{
-    display: flex;
-  
+display: flex;
+
+}
+.item-contato{
+text-transform: uppercase;
 }
 .item-contato ul li{
-    padding: 10px;
-    color: #fff;
+padding: 10px;
+color: #fff;
+
 }
 
 .item-contato ul li a {
-    padding-left: 10px;
+padding-left: 10px;
 
 }
 .item-contato ul li a:hover{
-    text-decoration: none;
-    color: #fff;
+text-decoration: none;
+color: #fff;
 }
 
 .item-rede-social {
@@ -364,55 +365,55 @@ justify-content: center;
 }
 
 .item-rede-social a{
-    padding: 8px;
-    
+padding: 8px;
+
 }
 .instructor-member >img{
-    width: 225px;
-    height: 225px;
-    border: 7px solid #322f3a;
-    text-align: center;
-    margin-bottom: 10px;
- 
+width: 225px;
+height: 225px;
+border: 7px solid #322f3a;
+text-align: center;
+margin-bottom: 10px;
+
 }
 .instructor-member h4{
-    padding: 0;
-    margin: 0;
+padding: 0;
+margin: 0;
 }
 .instructor-member p{
-    margin: 0;
-    font-size: 15px;
+margin: 0;
+font-size: 15px;
 }
 
 .instructor-member{
-    text-align: center;
+text-align: center;
 }
 /* animação */
 
 /* Animação */
 
 /* [data-anime]{
-    opacity: 0;
-    transition: 0.8s;
-    }
-    
-    [data-anime="left"]{
-    transform: translate3d(-10px, 0 , 0 );
-    visibility: hidden;
-    }
-    
-    [data-anime="center"]{
-    transform: translate3d(0px, -10px , 0 );
-    visibility: hidden;
-    }
-    
-    [data-anime="right"]{
-    transform: translate3d(10px, 0 , 0 );
-    visibility: hidden;
-    }
-    
-    [data-anime].animate{
-    opacity: 1;
-    transform: translate3d(0px, 0px ,0px);
-    visibility: visible;
-    } */
+opacity: 0;
+transition: 0.8s;
+}
+
+[data-anime="left"]{
+transform: translate3d(-10px, 0 , 0 );
+visibility: hidden;
+}
+
+[data-anime="center"]{
+transform: translate3d(0px, -10px , 0 );
+visibility: hidden;
+}
+
+[data-anime="right"]{
+transform: translate3d(10px, 0 , 0 );
+visibility: hidden;
+}
+
+[data-anime].animate{
+opacity: 1;
+transform: translate3d(0px, 0px ,0px);
+visibility: visible;
+} */
