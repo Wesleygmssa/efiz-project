@@ -80,12 +80,13 @@ color: #fff;
 text-shadow: 2px 2px 2px #000;
 font-size: 15px;
 letter-spacing: 1.5px;
-
+transition: background-color 0.3s;
 
 }
 
 .navbar-inverse .navbar-nav>li>a:hover{
-color: var(--primary-color);
+color: #fff;
+background-color: var(--primary-color);
 }
 
 /* Imagem de capa */
@@ -172,9 +173,6 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 
-
-
-
 /* tipografia */
 #segmentos .title{
 text-align: center;
@@ -224,7 +222,7 @@ flex-wrap: wrap;
 
 .card{
 
-padding: 10px 10px; 
+padding: 10px ; 
 height: 100%;
 }
 
@@ -249,6 +247,7 @@ height:90%;
 
 #proposta .title-service{
     color: #fff;
+    font-weight: bold;
 }
 #proposta .title-service p{
     color: #fff;
@@ -286,55 +285,7 @@ form button:hover{
     
     }
 
-/* #protosta form h4{
-color: #fff;
-text-align: center;
-padding: 40px;
-font-size: 50px;
-text-shadow: 2px 2px 2px #000;
-}
 
-#protosta form p{
-text-align: center;
-padding-bottom: 10px;
-color: #fff;
-text-shadow: 2px 2px 2px #000;
-font-size: 16px;
-}
-
-section .form{
-width: 100%;
-display: flex;
-justify-content: center;
-padding: 100px;
-
-
-}
-form{
-
-padding: 20px;
-margin: 0 auto;
-}
-
-
-input{
-
-
-width: 100%;
-padding: 20px 30px;
-border-radius: 500px;
-font-size: 15px;
-color: rgb(51, 49, 49);
-
-
-}
-
-
-
-
-}
-
- */
 
 
 /* section 2 Abertura de mepresas */
@@ -490,7 +441,7 @@ margin-left: 50px;
 
 
 }
-
+/* 
 @media screen and (min-width:767px){
 
 .texto-capa h1{
@@ -499,7 +450,7 @@ letter-spacing: 0px;
 }
 
 
-}
+} */
 
 
 
