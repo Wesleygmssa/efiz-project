@@ -23,7 +23,7 @@ overflow: auto;
 }
 :root{
 --primary-color: #CB202D ;
---secondary-color: #A52A2A ;
+--secondary-color: #cb202eee;
 }
 
 
@@ -195,68 +195,71 @@ padding: 0px 4px;
 }
 
 
-.cards {
+/* cards services */
+#service{
+padding-bottom: 60px;
 
+}
+.title-service{
+text-align: center;
+padding: 70px 0px;   
+}
+
+.title-service h2{
+font-size: 60px;
+padding-bottom: 20px;
+border-bottom: 1px solid #ccc;
+}
+
+
+.cards{
 display: flex;
-
 justify-content: center;
+align-items: center;
+text-align: center;
+flex-wrap: wrap;
+
+
 }
 
 .card{
-flex: 1;
-padding: 50px 5px ;
-border-radius: 5px;
-margin:  20px 10px;
 
-
-
+padding: 10px 10px; 
+height: 100%;
 }
 
-.card-title{
- width: 200px;
-font-size: 25px;
-margin: 20px 40px;
+.card .content{
 
-
+height: 200px;
+padding: 5px 10px; 
 }
-.card-text{
-font-size: 15px;
-width: 100%;
-margin: 20px auto;
-color: rgb(134, 131, 131);
-letter-spacing: 0.5px;
-position: relative;
-
-}
-
-
 
 
 
 /* == section solicitar uma proposta === */
 #protosta{
-    width: 100%;
-    background: url('./imagens/bg.jpg') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;       
-    position: relative;
+width: 100%;
+background: url('./imagens/bg.jpg') no-repeat;
+background-size: cover;
+background-attachment: fixed;       
+position: relative;
 
 }
 
 #protosta form h4{
- color: #fff;
- text-align: center;
- padding: 40px;
- font-size: 50px;
- text-shadow: 2px 2px 2px #000;
+color: #fff;
+text-align: center;
+padding: 40px;
+font-size: 50px;
+text-shadow: 2px 2px 2px #000;
 }
 
 #protosta form p{
-    text-align: center;
-    padding-bottom: 10px;
-    color: #fff;
-    text-shadow: 2px 2px 2px #000;
-    font-size: 16px;
+text-align: center;
+padding-bottom: 10px;
+color: #fff;
+text-shadow: 2px 2px 2px #000;
+font-size: 16px;
 }
 
 section .form{
@@ -275,7 +278,7 @@ margin: 0 auto;
 
 
 input{
-   
+
 max-width: 800px;
 width: 100%;
 padding: 20px 30px;
@@ -302,7 +305,7 @@ transition: background 1s;
 }
 
 form button:hover{
-background:#A52A2A ;
+background: var(--secondary-color) ;
 
 }
 
@@ -338,8 +341,8 @@ margin:80px auto;
 
 }
 #abertura img{
-    max-width: 1000px;
-    width: 100%;
+max-width: 1000px;
+width: 100%;
 }
 /* footer */
 
@@ -420,7 +423,61 @@ font-size: 15px;
 .instructor-member{
 text-align: center;
 }
-/* animação */
+
+
+@media screen and (max-width:767px){
+
+.texto-capa h1{
+font-size: 50px;
+letter-spacing: 0px; 
+}
+
+.title h2{
+font-size: 40px;
+letter-spacing: 0.5px;
+margin-bottom: 20px;
+}
+
+.texto-capa p{
+font-size: 18px;
+
+
+}
+
+#abertura h3{
+padding-top: 20px;
+font-size: 25px;
+letter-spacing: 2px;
+text-align: center;
+
+}
+
+#abertura {
+text-align: center;
+}
+
+#abertura a{
+text-align: center;
+margin-left: 50px;
+}
+
+
+}
+
+@media screen and (min-width:767px){
+
+.texto-capa h1{
+font-size: 70px;
+letter-spacing: 0px; 
+}
+
+
+}
+
+
+
+
+
 
 /* Animação */
 
@@ -448,53 +505,4 @@ visibility: hidden;
 opacity: 1;
 transform: translate3d(0px, 0px ,0px);
 visibility: visible;
-}
-
-@media screen and (max-width:767px){
-
-    .texto-capa h1{
-        font-size: 50px;
-        letter-spacing: 0px; 
-        }
-    
-    .title h2{
-        font-size: 40px;
-        letter-spacing: 0.5px;
-        margin-bottom: 20px;
-        }
-
-        .texto-capa p{
-            font-size: 18px;
-        
-            
-            }
-
-            #abertura h3{
-                padding-top: 20px;
-                font-size: 25px;
-                letter-spacing: 2px;
-                text-align: center;
-                
-                }
-      
-                #abertura {
-                    text-align: center;
-                }
-
-                #abertura a{
-                    text-align: center;
-                   margin-left: 50px;
-                }
-
-               
-}
-
-@media screen and (min-width:767px){
-
-    .texto-capa h1{
-        font-size: 70px;
-        letter-spacing: 0px; 
-        }
-
-       
 }
