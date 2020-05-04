@@ -237,16 +237,56 @@ padding: 5px 10px;
 
 
 /* == section solicitar uma proposta === */
-#protosta{
+#proposta{
 width: 100%;
 background: url('./imagens/bg.jpg') no-repeat;
 background-size: cover;
 background-attachment: fixed;       
 position: relative;
+height:90%;
 
 }
 
-#protosta form h4{
+#proposta .title-service{
+    color: #fff;
+}
+#proposta .title-service p{
+    color: #fff;
+}
+
+#proposta form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+    width: 80%;
+    margin: 0 auto;
+}
+#proposta form input{
+    padding: 30px;
+    border-radius: 500px;
+    margin-top: 10px;
+}
+
+
+form button{
+    width: 100%;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 500px;
+    border: 0;
+    padding: 15px 35px;
+    font-size: 30px;
+    transition: background 1s;
+    margin-top: 10px;
+}
+
+form button:hover{
+    background: var(--secondary-color) ;
+    
+    }
+
+/* #protosta form h4{
 color: #fff;
 text-align: center;
 padding: 40px;
@@ -271,7 +311,7 @@ padding: 100px;
 
 }
 form{
-width: 800px;
+
 padding: 20px;
 margin: 0 auto;
 }
@@ -279,7 +319,7 @@ margin: 0 auto;
 
 input{
 
-max-width: 800px;
+
 width: 100%;
 padding: 20px 30px;
 border-radius: 500px;
@@ -290,24 +330,11 @@ color: rgb(51, 49, 49);
 }
 
 
-form button{
-max-width: 800px;
-width: 100%;
-background: var(--primary-color);
-color: #fff;
-border-radius: 500px;
-border: 0;
-padding: 15px 35px;
-font-size: 30px;
-transition: background 1s;
 
 
 }
 
-form button:hover{
-background: var(--secondary-color) ;
-
-}
+ */
 
 
 /* section 2 Abertura de mepresas */
