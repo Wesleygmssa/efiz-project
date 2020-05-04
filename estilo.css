@@ -21,6 +21,10 @@ height: 100%;
 overflow: auto;
 
 }
+:root{
+--primary-color: #CB202D ;
+--secondary-color: #A52A2A ;
+}
 
 
 .icon-zap img{
@@ -54,7 +58,7 @@ color: transparent;
 }
 nav.navbar-transparent{
 padding: 15px 0px;
-background: rgba(0,0,0,0.6);
+background: rgba(0,0,0,0.0);
 border: none;
 
 }
@@ -77,10 +81,11 @@ text-shadow: 2px 2px 2px #000;
 font-size: 15px;
 letter-spacing: 1.5px;
 
+
 }
 
 .navbar-inverse .navbar-nav>li>a:hover{
-color: #7c25f8;
+color: var(--primary-color);
 }
 
 /* Imagem de capa */
@@ -140,22 +145,24 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 15px;
-border: 1px solid #7c25f8;
 color: white;
 text-decoration: none;
 cursor: pointer;
-background-color: #7c25f8;
+background-color: var(--primary-color);
 border-radius: 5px;
 max-width: 200px;
-width: 100%px;
 margin: 0 auto;
+border: 1px solid var(--primary-color);
+font-weight: bold;
 
 }
 
 .btn-custom:hover{
-background: #6207e3;
+background: var(--secondary-color);
+border: 1px solid var(--secondary-color);
 color: #fff;
 transition: 1s;
+font-weight: bold;
 
 }
 /* segmetons */
@@ -173,9 +180,12 @@ padding-bottom: 20px;
 text-align: center;
 }
 .title h2{
-font-size: 40px;
+font-size: 50px;
 letter-spacing: 0.5px;
 margin-bottom: 20px;
+border-bottom: 1px solid #ddd;
+padding-bottom: 20px;
+padding-top: 50px;
 }
 .texto-capa h1{
 font-size: 80px;
@@ -188,37 +198,35 @@ padding: 0px 4px;
 .cards {
 
 display: flex;
-flex-wrap: wrap;
+
 justify-content: center;
 }
 
 .card{
-width:500px ;
-padding: 30px 20px ;
-background: #DDD;
+flex: 1;
+padding: 50px 5px ;
 border-radius: 5px;
-margin-left: 5px;
-margin-right: 5px;
-margin-top:  20px;
+margin:  20px 10px;
 
--webkit-box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.75);
-box-shadow: 0px 6px 10px -5px rgba(0,0,0,0.75);
+
 
 }
 
 .card-title{
-font-size: 20px;
-margin: 20px 20px;
-position: relative;
+ width: 200px;
+font-size: 25px;
+margin: 20px 40px;
+
+
 }
 .card-text{
 font-size: 15px;
-max-width: 300px;
+width: 100%;
 margin: 20px auto;
 color: rgb(134, 131, 131);
 letter-spacing: 0.5px;
 position: relative;
+
 }
 
 
@@ -227,31 +235,50 @@ position: relative;
 
 /* == section solicitar uma proposta === */
 #protosta{
-background: #414041 ;
+    width: 100%;
+    background: url('./imagens/bg.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;       
+    position: relative;
 
 }
 
+#protosta form h4{
+ color: #fff;
+ text-align: center;
+ padding: 40px;
+ font-size: 50px;
+ text-shadow: 2px 2px 2px #000;
+}
+
+#protosta form p{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 16px;
+}
+
 section .form{
-max-width: 800px;
-margin: 0 auto;
-text-align: center;
-padding: 80px;
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 100px;
 
 
 }
 form{
+width: 800px;
 padding: 20px;
+margin: 0 auto;
 }
 
-.form h1{
-color: #fff;
-font-size: 60px;
-text-transform: uppercase;
-text-shadow: 2px 2px 2px #000;
-}
+
 input{
+   
+max-width: 800px;
+width: 100%;
 padding: 20px 30px;
-width: 90%;
 border-radius: 500px;
 font-size: 15px;
 color: rgb(51, 49, 49);
@@ -261,15 +288,16 @@ color: rgb(51, 49, 49);
 
 
 form button{
-width: 90%;
-background: rgba(0,0,0,0.6);
+max-width: 800px;
+width: 100%;
+background: var(--primary-color);
 color: #fff;
 border-radius: 500px;
 border: 0;
 padding: 15px 35px;
-font-size: 20px;
+font-size: 30px;
 transition: background 1s;
-font-size: 25px;
+
 
 }
 
@@ -283,16 +311,19 @@ background:#A52A2A ;
 section#abertura{
 background: #EEe;
 padding: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
 
-.img{ 
-width: 100%;
-max-width: 490px;
-}
+
 #abertura h3{
 padding-top: 20px;
-font-size: 30px;
+padding-bottom: 20px;
+font-size: 50px;
 letter-spacing: 2px;
+border-bottom: 2px solid #ddd;
 
 }
 
@@ -303,7 +334,12 @@ letter-spacing: 2px;
 margin-bottom: 50px;
 }
 #abertura a{
-margin: 0;
+margin:80px auto;
+
+}
+#abertura img{
+    max-width: 1000px;
+    width: 100%;
 }
 /* footer */
 
@@ -367,7 +403,7 @@ padding: 8px;
 .instructor-member >img{
 width: 225px;
 height: 225px;
-border: 7px solid #322f3a;
+border: 7px solid var(--primary-color);
 text-align: center;
 margin-bottom: 10px;
 
@@ -388,7 +424,7 @@ text-align: center;
 
 /* Animação */
 
-/* [data-anime]{
+[data-anime]{
 opacity: 0;
 transition: 0.8s;
 }
@@ -412,7 +448,7 @@ visibility: hidden;
 opacity: 1;
 transform: translate3d(0px, 0px ,0px);
 visibility: visible;
-} */
+}
 
 @media screen and (max-width:767px){
 
