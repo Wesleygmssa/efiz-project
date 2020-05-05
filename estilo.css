@@ -95,15 +95,14 @@ text-transform: uppercase;
 .navbar-inverse .navbar-nav>li>a:hover{
 color: #fff;
 background-color: var(--primary-color);
-border-bottom: 2px solid #fff;
+
 }
 
 .ativo{
 color: #fff;
 background-color: var(--primary-color);
-border-bottom: 2px solid #fff;
-}
 
+}
 /* Imagem de capa */
 .banner{
 width: 100%;
