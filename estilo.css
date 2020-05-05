@@ -49,12 +49,14 @@ animation-direction: reverse; */
 /* Barra de  nageação */
 
 .img-logo{
-height: 40px;
-width: 132px;
+height: 70px;
+width: 180px;
 display: block;
-background: url('imagens/spotify.svg') no-repeat;
-background-size: contain;
+background: url('imagens/logo.png') no-repeat;
+background-size: cover;
 color: transparent;
+
+
 
 }
 nav.navbar-transparent{
@@ -99,6 +101,7 @@ border-bottom: 2px solid #fff;
 .ativo{
 color: #fff;
 background-color: var(--primary-color);
+border-bottom: 2px solid #fff;
 }
 
 /* Imagem de capa */
