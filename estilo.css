@@ -23,7 +23,8 @@ overflow: auto;
 }
 :root{
 --primary-color: #CB202D ;
---secondary-color: #cb202d90;
+
+--secondary-color: #c90b1b;
 }
 
 
@@ -58,7 +59,7 @@ color: transparent;
 }
 nav.navbar-transparent{
 padding: 15px 0px;
-background: rgba(0,0,0,0.0);
+background: var(--primary-color);
 border: none;
 
 }
@@ -76,15 +77,26 @@ margin: 16px 10px;
 }
 
 .navbar-inverse .navbar-nav>li>a, footer a{
-color: #fff;
+color: rgba(255, 255, 255, 0.8);
 text-shadow: 2px 2px 2px #000;
 font-size: 15px;
 letter-spacing: 1.5px;
 transition: background-color 0.3s;
+transition: border-bottom 0.5s;
+font-weight: bold;
+border-bottom: 2px solid rgba(0,0,0,0.0); 
+text-transform: uppercase;
+
 
 }
 
 .navbar-inverse .navbar-nav>li>a:hover{
+color: #fff;
+background-color: var(--primary-color);
+border-bottom: 2px solid #fff;
+}
+
+.ativo{
 color: #fff;
 background-color: var(--primary-color);
 }
@@ -92,7 +104,7 @@ background-color: var(--primary-color);
 /* Imagem de capa */
 .banner{
 width: 100%;
-height: 100vh;
+height: 100%;
 background: url('https://images.unsplash.com/photo-1501290836517-b22a21c522a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80') no-repeat;
 background-size: cover;
 background-attachment: fixed;       
@@ -124,7 +136,7 @@ z-index: 1;
 }
 
 .texto-capa p{
-font-size: 20px;
+font-size: 16px;
 margin-bottom: 100px;
 margin-top: 100px;
 color: #ffffff;
@@ -151,7 +163,7 @@ text-decoration: none;
 cursor: pointer;
 background-color: var(--primary-color);
 border-radius: 5px;
-max-width: 200px;
+max-width: 300px;
 margin: 0 auto;
 border: 1px solid var(--primary-color);
 font-weight: bold;
@@ -176,38 +188,33 @@ padding-bottom: 20px;
 /* tipografia */
 #segmentos .title{
 text-align: center;
+
 }
-.title h2{
-font-size: 50px;
-letter-spacing: 0.5px;
-margin-bottom: 20px;
-border-bottom: 1px solid #ddd;
-padding-bottom: 20px;
-padding-top: 50px;
-}
+
 .texto-capa h1{
-font-size: 80px;
-font-weight: 900px;
-letter-spacing: -6px; 
-padding: 0px 4px;
-}
+    font-size: 60px;
+    font-weight: 900px;
+    letter-spacing: 0px; 
+ 
+    }
+
+
 
 
 /* cards services */
 #service{
 padding-bottom: 60px;
-
-
+background-color: #fff;
 
 }
 .title-service{
 text-align: center;
-padding: 70px 0px;   
+padding: 50px 0px;   
 
 }
 
 .title-service h2{
-font-size: 60px;
+font-size: 50px;
 padding-bottom: 20px;
 border-bottom: 1px solid #ccc;
 }
@@ -219,9 +226,6 @@ justify-content: center;
 align-items: center;
 text-align: center;
 flex-wrap: wrap;
-
-
-
 
 }
 
@@ -236,6 +240,10 @@ height: 200px;
 padding: 5px 10px; 
 }
 
+.card  p{
+    font-size: 15px;
+}
+
 
 
 /* == section solicitar uma proposta === */
@@ -245,56 +253,58 @@ background: url('./imagens/bg.jpg') no-repeat;
 background-size: cover;
 background-attachment: fixed;       
 position: relative;
-height:90%;
+height:auto;
+padding: 100px 0px;
 
 }
 
 #proposta .title-service{
-    color: #fff;
-    font-weight: bold;
+color: #fff;
+font-weight: bold;
 }
 #proposta .title-service p{
-    color: #fff;
+color: #fff;
 }
 
 #proposta form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  
-    width: 80%;
-    margin: 0 auto;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+width: 80%;
+margin: 0 auto;
 }
 #proposta form input{
-    padding: 30px;
-    border-radius: 500px;
-    margin-top: 10px;
+padding: 30px;
+border-radius: 500px;
+margin-top: 10px;
+font-size: 20px;
+color: rgb(95, 85, 85);
 }
 
 
 form button{
-    width: 100%;
-    background: var(--primary-color);
-    color: #fff;
-    border-radius: 500px;
-    border: 0;
-    padding: 15px 35px;
-    font-size: 30px;
-    transition: background 1s;
-    margin-top: 10px;
+width: 100%;
+background: var(--primary-color);
+color: #fff;
+border-radius: 500px;
+border: 0;
+padding: 15px 35px;
+font-size: 30px;
+transition: background 1s;
+margin-top: 10px;
 }
 
 form button:hover{
-    background: var(--secondary-color) ;
-    
-    }
+background: var(--secondary-color) ;
+}
 
 
 
 
 /* section 2 Abertura de mepresas */
 section#abertura{
-background: #EEe;
+background: var(--secondary-color);
 padding: 100px;
 display: flex;
 justify-content: center;
@@ -304,6 +314,7 @@ text-align: center;
 
 
 #abertura h3{
+color: #fff;
 padding-top: 20px;
 padding-bottom: 20px;
 font-size: 50px;
@@ -318,6 +329,7 @@ padding-top: 20px;
 line-height: 32px;
 letter-spacing: 2px;
 margin-bottom: 50px;
+color: #fff;
 }
 #abertura a{
 margin:80px auto;
@@ -326,6 +338,7 @@ margin:80px auto;
 #abertura img{
 max-width: 1000px;
 width: 100%;
+border-radius: 5px;
 }
 /* footer */
 
@@ -423,12 +436,10 @@ margin-bottom: 20px;
 
 .texto-capa p{
 font-size: 18px;
-
-
 }
 
 #abertura{
-  
+
 
 }
 
@@ -438,14 +449,12 @@ font-size: 30px;
 letter-spacing: 2px;
 text-align: center;
 width: 100%;
-
-
 }
 
 #abertura p{
 
-    width: 300px;
-   
+width: 300px;
+
 }
 
 #abertura {
@@ -458,7 +467,7 @@ margin-left: 50px;
 }
 
 .card:nth-child(4){
-    margin-top: 70px;
+margin-top: 70px;
 }
 
 

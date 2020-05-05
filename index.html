@@ -32,7 +32,7 @@
     <div class="banner">
 
         <div class="layer"></div>
-        <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparent">
+        <nav class="navbar navbar-inverse navbar-transparent">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -51,17 +51,16 @@
                 <!-- /navbar -->
                 <div class="collapse navbar-collapse" id="barra-nav">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Nossos Segmentos</a></li>
-                        <li><a href="">Abertura de Empresas</a></li>
-                        <li class="divisor" role="separator"></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#capa" class="ativo  scroll-page">Home</a></li>
+                        <li><a href="#services" class="scroll-page">Nossos Segmentos</a></li>
+                        <li><a href="#abertura" class="scroll-page">Abertura de Empresas</a></li>
+                        <li><a href="#rodape" class="scroll-page">Contato</a></li>
                     </ul>
                 </div>
             </div> <!-- /container -->
         </nav> <!-- /nav -->
 
-        <div class="capa">
+        <div class="capa" id="capa">
             <div class="texto-capa">
                 <h1>CONTABILIDADE E CONSULTORIA FINANCEIRA</h1>
                 <p>Auxiliamos na tomada de decisões para o crescimento do seu negócio com eficiência e eficácia.</p>
@@ -76,7 +75,7 @@
     <!-- CONTEUDO -->
     <section id="service">
         <div class="container">
-            <div class="title-service">
+            <div class="title-service" id="services">
                 <h2>Conheça os nossos segmentos</h2>
                 <p>Temos o compromisso de ajudar a sua empresa a crescer de forma rápida e prática, com
                     planejamento, organização e gestão.</p>
@@ -142,21 +141,23 @@
 
 
     <section id="abertura">
-        
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Abertura de empresas</h3>
-                    <p>Te auxiliamos na escolha jurídica do seu negócio e cuidamos de toda parte burocrática para que
-                        você possa ter tempo para seus clientes.</p>
 
-                </div>
-                <div class="col-md-6">
-                    <img class="img" src="./imagens/unita-abertura-de-empresas.jpg">
-
-                </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Abertura de empresas</h3>
+                <p>Te auxiliamos na escolha jurídica do seu negócio e cuidamos de toda parte burocrática para que
+                    você possa ter tempo para seus clientes.</p>
+                <a href="" class="btn btn-custom btn-lg"> Quero fazer uma proposta <i class="material-icons">
+                        double_arrow
+                    </i> </a>
+            </div>
+            <div class="col-md-6">
+                <img class="img" src="./imagens/unita-abertura-de-empresas.jpg">
 
             </div>
-        
+
+        </div>
+
     </section>
 
     <section id="proposta">
@@ -216,15 +217,24 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-md-12 " style="text-align: center;">
+                    <p>  © 2020 - Todos os direitos reservados
+                        Direitos autorais
+                        Termos de uso
+                        Política de privacidade
+                        Consulta de certificados</p>
+                </div>
             </div> <!-- /row -->
         </div>
     </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
 </body>
 
 </html>
