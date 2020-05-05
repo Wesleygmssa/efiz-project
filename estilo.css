@@ -22,8 +22,8 @@ overflow: auto;
 
 }
 :root{
---primary-color: #CB202D ;
-
+--primary-color: rgb(153, 20, 31);
+--third-color: #CB202D;
 --secondary-color: #770710;
 }
 
@@ -143,6 +143,7 @@ margin-top: 100px;
 color: #ffffff;
 padding: 10px 0px;
 font-weight: 900;
+letter-spacing: 1.5px;
 }
 
 
