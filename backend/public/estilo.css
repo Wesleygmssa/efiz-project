@@ -1,0 +1,580 @@
+/* 
+@author Wesley Guerra
+@version 0.1
+*/
+
+/* ====layout ====== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+font-family: 'Roboto', sans-serif;
+-webkit-font-smooyhing: antialiased; /* melhoarda na visualização da fonte */
+outline: none;
+box-sizing: border-box;
+}
+p{
+color: rgb(134, 131, 131);
+font-size: 16px;
+text-shadow: 0px 0px 0.5px #000;
+}
+body, html,.capa{
+height: 100%;
+overflow: auto;
+
+}
+:root{
+--primary-color: rgb(153, 20, 31);
+--third-color: #CB202D;
+--secondary-color: #770710;
+}
+
+
+.icon-zap img{
+width: 70px;
+}
+.icon-zap{
+position: fixed;
+bottom: 5%;
+z-index: 4;
+right: 10px;
+/* animation */
+/* animation-name: zap ; 
+animation-duration: 2s; 
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: reverse; */
+
+}
+
+
+/* Barra de  nageação */
+
+.img-logo{
+height: 80px;
+width: 200px;
+background: url('imagens/logo.png') no-repeat;
+background-size: cover;
+color: transparent;
+
+
+
+}
+nav.navbar-transparent{
+padding: 15px 0px;
+background: var(--primary-color);
+border: none;
+
+
+}
+.navbar-brand{
+padding: 5px 0px;
+
+
+} 
+
+.divisor{
+width: 1px;
+height: 16px;
+background: #ffffff;
+margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer a{
+color: rgba(255, 255, 255, 0.8);
+text-shadow: 2px 2px 2px #000;
+font-size: 12px;
+letter-spacing: 1.5px;
+transition: background-color 0.3s;
+transition: border-bottom 0.5s;
+font-weight: bold;
+border-bottom: 2px solid rgba(0,0,0,0.0); 
+text-transform: uppercase;
+
+
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+color: #fff;
+background-color: var(--primary-color);
+
+}
+
+.ativo{
+color: #fff;
+background-color: var(--primary-color);
+
+}
+/* Imagem de capa */
+.banner{
+width: 100%;
+height: 100%;
+background: url('https://images.unsplash.com/photo-1501290836517-b22a21c522a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80') no-repeat;
+background-size: cover;
+background-attachment: fixed;       
+position: relative;
+
+}
+.layer{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
+
+}
+
+.capa{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.texto-capa{
+text-align: center;
+color: #fff;
+z-index: 1;
+}
+
+.texto-capa p{
+font-size: 16px;
+margin-bottom: 100px;
+margin-top: 100px;
+color: #ffffff;
+padding: 10px 0px;
+font-weight: 900;
+letter-spacing: 1.5px;
+}
+
+
+
+/* == botões == */
+.btn-custom {
+
+/* color: #fff;
+border-radius: 500px;
+background: #7c25f8;
+padding: 10px 35px; */
+
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 15px;
+color: white;
+text-decoration: none;
+cursor: pointer;
+background-color: var(--primary-color);
+border-radius: 5px;
+max-width: 300px;
+margin: 0 auto;
+border: 1px solid var(--primary-color);
+font-weight: bold;
+
+}
+
+.btn-custom:hover{
+background: var(--secondary-color);
+border: 1px solid var(--secondary-color);
+color: #fff;
+transition: 1s;
+font-weight: bold;
+
+}
+/* segmetons */
+#segmentos{
+background: #fff;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+/* tipografia */
+#segmentos .title{
+text-align: center;
+
+}
+
+.texto-capa h1{
+    margin-top: 200px;
+font-size: 60px;
+font-weight: 900px;
+letter-spacing: 0px; 
+
+}
+
+
+
+
+/* cards services */
+#service{
+padding-bottom: 60px;
+background-color: #fff;
+
+}
+.title-service{
+text-align: center;
+padding-top:30px;  
+width: 99%;
+margin: 0px auto;
+
+
+
+
+}
+
+.title-service h2{
+width: 600px;
+margin: 20px auto;
+font-size: 40px;
+font-weight: bold;
+border-bottom: 2px solid #ccc;
+
+}
+
+/* .title-service p{
+
+} */
+
+.cards{
+display: grid;
+grid-template-columns: 1fr ;
+padding: 20px 0px 0px 0px;
+
+
+}
+
+.card{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+padding: 20px 0px;
+flex: 1;
+
+}
+
+.card .secondary,.card-content.secondary p{
+
+
+}
+
+
+.card .primary,.card-content.primary p{
+background-color:#eeeeee99;
+
+}
+.card .card-content{
+height: 300px;
+border-radius: 2%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+.card .card-content h3{
+
+}
+
+.card .card-img img{
+margin-top: 10px;
+width: 100%;
+max-height: 300px;
+border-radius: 2%;
+
+-webkit-box-shadow: 0px 9px 31px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 9px 31px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 9px 31px 1px rgba(0,0,0,0.75);
+
+}
+
+
+/* == section solicitar uma proposta === */
+#proposta{
+width: 100%;
+background: url('./imagens/bg.jpg') no-repeat;
+background-size: cover;
+background-attachment: fixed;       
+position: relative;
+height:auto;
+padding: 100px 0px;
+
+}
+
+#proposta .title-service{
+color: #fff;
+font-weight: bold;
+}
+#proposta .title-service p{
+color: #fff;
+}
+
+#proposta form{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+width: 80%;
+margin: 0 auto;
+}
+#proposta form input{
+padding: 30px;
+border-radius: 500px;
+margin-top: 10px;
+font-size: 20px;
+color: rgb(95, 85, 85);
+}
+
+
+form button{
+width: 100%;
+background: var(--primary-color);
+color: #fff;
+border-radius: 500px;
+border: 0;
+padding: 15px 35px;
+font-size: 30px;
+transition: background 1s;
+margin-top: 10px;
+}
+
+form button:hover{
+background: var(--secondary-color) ;
+}
+
+
+
+
+/* section 2 Abertura de mepresas */
+#abertura{
+    background: var(--secondary-color);
+    padding: 80px 0px;
+   
+}
+
+.abertura-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.section_2 h3{
+    font-size: 40px;
+   border-bottom: 2px solid #ccc;
+   margin-bottom: 20px;
+}
+
+.section_2 p{
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+/* card-main  */
+.cards-main {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.card-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.img-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.img-main img{
+   width: 100px;
+}
+
+.img-main h2{
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.card-main p{
+    margin-bottom: 30px;
+}
+.card-main a{
+    background-color: none;;
+}
+
+/* footer */
+
+footer{
+background-color:#fff;
+}
+
+footer .cards{
+display: flex;
+
+flex-wrap: wrap;
+}
+
+footer .card{
+
+display: block;
+padding: 20px;
+
+}
+
+footer .card:first-child{
+
+    display: block;
+
+}
+
+footer .card img{
+width: 200px;
+border-radius: 50%;
+margin-bottom: 8px;
+}
+footer .card:first-child h3{
+
+font-size: 30px;
+/* color: var(--secondary-color); */
+}
+footer .card:nth-child(2){
+text-align: center;
+}
+
+footer .card:nth-child(2) ul{
+
+margin-right: 50px;
+
+}
+
+footer .card:nth-child(2) ul a img{
+
+width: 50px;
+
+}
+
+footer .card:nth-child(3){
+
+
+}
+
+footer .card:nth-child(3) ul {
+text-decoration: none;
+list-style: none;
+
+
+}
+
+footer .card:nth-child(3) ul li{
+display: flex;
+padding: 8px;
+
+}
+
+footer .card:nth-child(3) ul li a{
+color: #000;
+text-decoration: none;
+text-shadow: none;
+
+
+
+
+
+}
+
+
+@media screen and (max-width:991px){
+
+.texto-capa h1{
+font-size: 50px;
+letter-spacing: 0px; 
+}
+
+.title h2{
+font-size: 40px;
+letter-spacing: 0.5px;
+margin-bottom: 20px;
+}
+
+.texto-capa p{
+font-size: 18px;
+}
+
+#abertura{
+
+
+}
+
+#abertura h3{
+padding-top: 20px;
+font-size: 30px;
+letter-spacing: 2px;
+text-align: center;
+width: 100%;
+}
+
+#abertura p{
+
+width: 300px;
+
+}
+
+#abertura {
+text-align: center;
+}
+
+#abertura a{
+text-align: center;
+margin-left: 50px;
+}
+
+.card.reverse{
+flex-direction: column-reverse;
+}
+
+
+}
+
+
+/* animação */
+
+
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0) ;
+}
+
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0) ;
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+
+
+
