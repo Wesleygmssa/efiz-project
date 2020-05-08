@@ -13,7 +13,7 @@
 <p align="center">
     <br/>
   <br/>
-  <img src="efiz.gif" >
+  <img src="EFIZ.gif" >
   <br/>
   <br/>
 </p>
