@@ -1,6 +1,6 @@
 
 <h3 align="center">
-  Desafio: Gym Manager
+ EFIZ
 </h3>
 
 <blockquote align="center">“Sua única limitação é você mesmo”!</blockquote>
