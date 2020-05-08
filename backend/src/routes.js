@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = express.Router(); 
 
-// const members = require('./app/controllers/members') 
+const members = require('./app/controllers/members') 
 
 
 routes.get('/', function(req, res){
@@ -11,6 +11,8 @@ routes.get('/', function(req, res){
 routes.get('/index', function(req, res){
     return res.render('index')
 })
+
+routes.post('/members', members.post) // salvando dados enviado do formulario create
 
 
 
