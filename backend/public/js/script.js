@@ -21,10 +21,10 @@ $(function () {
 
 
 
-    $('.button a').click(function () {
+    $('.btn').click(function () {
         var href = $(this).attr('href');
         var offSetTop = $(href).offset().top;
-        $('html,body').animate({ 'scrollTop': offSetTop });
+        $('html,body, .banner').animate({ 'scrollTop': offSetTop });
 
         return false;
     })
