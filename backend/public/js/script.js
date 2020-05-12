@@ -1,13 +1,13 @@
-let ul = document.querySelector('nav ul');
-let li = document.querySelectorAll('nav ul li');
+// let ul = document.querySelector('nav ul');
+// let li = document.querySelectorAll('nav ul li');
 
-li.forEach(el => {
-    el.addEventListener('click', ()=>{
-        ul.querySelector('.ativo').classList.remove('ativo')
+// li.forEach(el => {
+//     el.addEventListener('click', ()=>{
+//         ul.querySelector('.ativo').classList.remove('ativo')
 
-        el.classList.add('ativo');
-    })
-});
+//         el.classList.add('ativo');
+//     })
+// });
 
 $(function () {
     $('.nav a').click(function () {

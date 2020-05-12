@@ -362,6 +362,7 @@ width: 100%;
 
 .section_1 img{
 width: 100%;
+padding: 20px;
 }
 
 .section_2{
@@ -417,11 +418,13 @@ border-radius: 5px;
 display: grid;
 grid-template-columns: 1fr 1fr;
 margin-bottom: 20px;
+
 }
 
 .img-main img{
 max-width: 100px;
 width: 100%;
+
 }
 
 .img-main h2{
@@ -524,11 +527,6 @@ margin-bottom: 20px;
 font-size: 18px;
 }
 
-#abertura{
-
-
-}
-
 #abertura h3{
 padding-top: 20px;
 font-size: 30px;
@@ -543,14 +541,6 @@ width: 300px;
 
 }
 
-#abertura {
-text-align: center;
-}
-
-#abertura a{
-text-align: center;
-margin-left: 50px;
-}
 
 .card.reverse{
 flex-direction: column-reverse;
